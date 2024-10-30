@@ -1,0 +1,286 @@
+/* Genericos */
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* BANNER */
+.mbbanner{
+	position: relative;
+}
+.mbbanner-link{
+	display: block;
+}
+.mbbanner img{
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+.mbbanner-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+	background-color: rgba(0,0,0,0.5);
+	
+    -webkit-transition: background 0.25s ease-in-out;
+    -moz-transition: background 0.25s ease-in-out;
+    -ms-transition: background 0.25s ease-in-out;
+    -o-transition: background 0.25s ease-in-out;
+    transition: background 0.25s ease-in-out;
+}
+.mbbanner:hover .mbbanner-overlay{
+	background-color: rgba(255,255,255,0.5);
+}
+.mbbanner-text{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+	z-index: 15;
+}
+
+/* BANNER MASONRY V1 y V3*/
+.elementor-widget-banner_masonry{
+	margin: 0 !important;
+}
+.mb-banner-m,
+.mb-banner-m-v3{
+	position: relative;
+}
+.mb-banner-m .mb-banner-m-img,
+.mb-banner-m-v3-img{
+	position: absolute;
+	background: transparent no-repeat 50% 50%;
+	background-size: cover;
+	width: 100%;
+	height:	100%;
+}
+.mb-banner-m .overlay,
+.mb-banner-m-v3 .overlay{
+	opacity: .22;
+}
+.mb-banner-m:hover .overlay,
+.mb-banner-m-v3:hover .overlay{
+	opacity: .55;
+}
+.mb-banner-m a.mb-banner-m-link,
+.mb-banner-m-v3-link{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/* BANNER MASONRY V2 */
+.mb-bannerm-v2{
+	width: 100%;
+	position: relative;
+}
+.mb-bannerm-v2 a{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.mb-bannerm-v2 a span{
+	display: block;
+	position: relative;
+	margin-right: -12%;
+}
+.mb-bannerm-v2 a img{
+	height: auto;
+	max-width: 50%;
+}
+
+/* BOTON DUAL */
+.mb-dual-btn-wrap{
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+	position: relative;
+}
+.mb-dual-btn{
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+.mb-dual-btn a{
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+}
+.mb-dual-btn span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 0 6px rgba(255,255,255,0.2);
+    background: #FAFAF8;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    vertical-align: middle;
+}
+.mb-dual-btn a{
+	font-size: 12px;
+	padding: 10px 12px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+}
+.mb-dual-btn a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.mb-dual-btn a.mb-dual-btn-l{
+	background-color: #818a91;
+	padding-right: 35px;
+}
+.mb-dual-btn a.mb-dual-btn-r{
+	background-color: #1e87f0;
+	padding-left: 35px;
+}
+.mb-dual-btn a.mb-dual-btn-l:hover{
+	background-color: #697279;
+}
+.mb-dual-btn a.mb-dual-btn-r:hover{
+	background-color: #0f6ecd;
+}
+
+/* CALL TO ACTION */
+.mb-cta-content{
+	text-align: center;
+}
+.mb-cta-col{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* CUADRO IMAGEN HOVER */
+.mb-image-box-hover{
+	position: relative;
+	text-align: center;
+}
+.mb-image-box-hover-img-link{
+	display: inline-block;
+	position: relative;
+}
+.mb-image-box-hover a img{
+	opacity: 0;
+	
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+}
+.mb-image-box-hover img:first-child{
+	opacity: 1;
+}
+.mb-image-box-hover img:last-child{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.mb-image-box-hover a:hover img:first-child{
+	opacity: 0;
+}
+.mb-image-box-hover a:hover img:last-child{
+	opacity: 1;
+}
+
+/* SUPER LINK */
+.mbsl{
+	text-align: center;
+	background-color: #eee;
+	padding: 30px;
+}
+
+/* TEXTO EN CIRCULO */
+.mbctc{
+	display: block;
+	width: 340px;
+	height: 340px;
+	position: relative;
+	border: 2px solid #FFF;
+	background-color: #999;
+	margin: 0 auto 40px auto;
+	
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+	overflow: hidden;
+}
+.mbctc-contenido{
+	display: block;
+	width: 290px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+}
+.mbctc-contenido h2{
+}
+.mbctc-contenido p{
+	line-height: 1.3em;
+}
+
+/* TITULO CON SUBTITULO */
+.mbts{
+	box-sizing: border-box;
+}
+.mbts .titulo{
+	position: relative;
+}
+.mbts .titulo h2{}
+.mbts .subtitulo{
+	position: relative;
+}
+.mbts .subtitulo p{
+}
+
+/* TITULO CON SUBTITULO Y BAJADA */
+.mbtsb{
+	box-sizing: border-box;
+}
+.mbtsb h2{}
+.mbtsb h3{}
+.mbtsb p{}
+
+/* Cuadro de Imagen con Boton */
+.mb-image-box-button-content{
+	position: relative;
+	padding: 20px;
+}
+.mb-image-box-button-title{
+	margin: 0;
+}
+
+@media only screen and (min-width: 1224px){
+	.mb-dual-btn a{
+		font-size: 14px;
+		padding: 15px 30px;
+		font-weight: 700;
+	}
+}
